@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RiotJS + Emoji + Isomorphic + Gulp</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src="https://cdn.jsdelivr.net/g/riot@2.0.15(riot.min.js+compiler.min.js)"></script>
+    <style>
+      @font-face {
+        font-family: "EmojiSymbols";
+        src: url( 'css/emojisymbols.woff') format('woff');
+        text-decoration: none;
+        font-style: normal;
+      }
+      .emj {
+        font-family: "EmojiSymbols";
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RiotJS + Emoji + Isomorphic + Gulp</h1>
+
+    <%- riotOutput %>
+    <script src="lib/app.min.js"></script>
+  </body>
+</html>
